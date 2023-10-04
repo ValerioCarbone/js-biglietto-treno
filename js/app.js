@@ -15,7 +15,7 @@
     console.log(userAge);
 // - Calcolare il prezzo del viaggio
 //   - Inizializzare una variabile che conterrà la moltiplicazione della variabile dei km per il prezzo per km
-    let ticketPrice = (userKm * 0.21);
+    let ticketPrice = userKm * 0.21;
     console.log(ticketPrice);
 
 // - Applicare lo sconto se opportuno
@@ -30,7 +30,8 @@
         }
         console.log(ticketPrice);
 //   - Transformare il prezzo in una cifra con max due decimali
-        ticketPriceFinal = ticketPrice.toFixed(2);
+        ticketPriceFinal = Math.round(ticketPrice * 100)/100;
+    // ticketPriceFinal = ticketPrice.toFixed(2);
         console.log(ticketPriceFinal);
 
 // - Mostrare all'utente il prezzo finale
