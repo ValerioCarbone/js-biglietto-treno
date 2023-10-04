@@ -20,13 +20,13 @@
 
 // - Applicare lo sconto se opportuno
 //   - Inizilizzare variabili sconti
-    const discountU18 = 0.2;
-    const discountO65 = 0.4; 
+    const discountU18 = ticketPrice * 0.2;
+    const discountO65 = ticketPrice * 0.4; 
 //   - Verificare se l'età del utente rientra nei parametri degli sconti
         if (userAge < 18) {
-            ticketPrice = ticketPrice * discountU18
+            ticketPrice = ticketPrice - discountU18
         } else if (userAge >= 65) {
-            ticketPrice = ticketPrice * discountO65
+            ticketPrice = ticketPrice - discountO65
         }
         console.log(ticketPrice);
 //   - Transformare il prezzo in una cifra con max due decimali
