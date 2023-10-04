@@ -24,6 +24,7 @@ console.log(ticketPrice);
 //   - Inizilizzare variabili sconti
 const discountU18 = ticketPrice * 0.2;
 const discountO65 = ticketPrice * 0.4;
+console.log(discountU18, discountO65);
 
 //   - Verificare se l'età del utente rientra nei parametri degli sconti
 if (userAge < 18) {
