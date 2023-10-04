@@ -3,7 +3,7 @@
     let userKm = prompt('Ciao, quanti kilometri vuoi percorrere?');
     console.log(userKm);
 //   - Transformare la stingra contenuta in userKm in un numero
-    userKm = parseInt(userKm);
+    userKm = parseFloat(userKm);
     console.log(userKm);
 
 // - Chiedere all'utente l'età
