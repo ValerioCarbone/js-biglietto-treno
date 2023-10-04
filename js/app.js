@@ -37,8 +37,8 @@ if (userAge < 18) {
 console.log(ticketPrice);
 
 //   - Transformare il prezzo in una cifra con max due decimali
-ticketPriceFinal = Math.round(ticketPrice * 100) / 100;
-// ticketPriceFinal = ticketPrice.toFixed(2);
+// ticketPriceFinal = Math.floor(ticketPrice * 100) / 100;
+ticketPriceFinal = ticketPrice.toFixed(2);
 console.log(ticketPriceFinal);
 
 // - Mostrare all'utente il prezzo finale
