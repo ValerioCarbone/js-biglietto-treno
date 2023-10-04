@@ -1,0 +1,5 @@
+- Chiedere all'utente i km da percorrere
+- Chiedere all'utente l'età
+- Calcolare il prezzo del viaggio
+- Applicare lo sconto se opportuno
+- Mostrare all'utente il prezzo finale in base ai dati inseriti
