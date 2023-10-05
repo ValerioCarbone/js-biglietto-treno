@@ -1,18 +1,13 @@
 // - Chiedere all'utente i km da percorrere
 //   - Inizializzare una variabile che contiene il numero dei km scelti dall'utente
-let userKm = prompt('Ciao, quanti kilometri vuoi percorrere?');
-console.log(userKm);
 //   - Transformare la stingra contenuta in userKm in un numero
-userKm = parseFloat(userKm);
+let userKm = parseFloat(prompt('Ciao, quanti kilometri vuoi percorrere?'));
 console.log(userKm);
 
 // - Chiedere all'utente l'età
 //   - Inizializzare una variabile che contiene l'età dell'utente
-let userAge = prompt('Quanti anni hai?');
-console.log(userAge);
-
 //   - Transformare la stingra contenuta in userAge in un numero
-userAge = parseInt(userAge);
+let userAge = parseInt(prompt('Quanti anni hai?'));
 console.log(userAge);
 
 // - Calcolare il prezzo del viaggio
@@ -44,7 +39,5 @@ console.log(ticketPriceFinal);
 // - Mostrare all'utente il prezzo finale
 //   - Creare elemento di testo nel file html
 //   - Richiamare tale elemento per id
-const finalPrice = document.getElementById('final_price');
-
 //   - Modificare l'elemento con la variabile del prezzo finale 
-finalPrice.innerHTML = ticketPriceFinal;
+document.getElementById('final_price') = ticketPriceFinal;
